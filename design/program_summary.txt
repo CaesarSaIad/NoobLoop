@@ -1,0 +1,11 @@
+program_summary
+
+Although there are many programs in the market that loop audio, most of 
+them are geared towards professionals with extensive experience in working 
+with sound. It is currently difficult to find a program made for the PC 
+that is free and user-friendly. NoobLoop is a simplified version of the 
+audio looper which only includes the essential elements of the audio 
+looper that anyone can use without difficulty. NoobLoop also comes with a 
+side sampler mode, in which the user can make a drum machine to make beats,
+components of which are mapped onto keyboard keys.
+

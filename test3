@@ -1,0 +1,6 @@
+data = scipy.io.wavfile.read(wavFileName)[1]
+fourier = np.fft.fft(data)
+n = data.size
+timestep = 0.1
+freq = np.fft.fftfreq(n, d=timestep)
+print(freq)

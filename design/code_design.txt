@@ -1,0 +1,42 @@
+The focus of this program was to keep the audio looping process simple and
+easy for the user. I designed NoobLoop and the sampler the way I wanted them 
+as a middle school student: a toy that could easy be comprehended and used
+using simple key presses and mouse clicks. I used a minimalistic user 
+interface, and avoided prompting the user for more advanced audio 
+information, such as the sample rate, etc. The program is designed so that 
+anyone with basic musical knowledge can use it without difficulty.
+
+However, there are many functions in this program that seemed easy at first 
+but weren't so. In designing NoobLoop, it was important to first 
+understand the intricacies of basic audiology, such as defining the sample
+rate, chunk, calculating the length of a recording given a tempo and time 
+signature, etc. This data was fed into my recording algorithm which 
+took in appropriate values through the computer microphone and wrote it 
+into a .wav file using bytecode with the wave module.
+
+At the creation of a project, the user is prompted to input the time 
+signature, tempo and number of measures. Code from snd110.py was then 
+applied to create customized .wav files that would count off the pick-up 
+measure and act as a metronome while recording. The metronome can be 
+turned on and off at the menu.
+
+To allow tracks to store multiple sounds, each track object was designed to
+hold a dictionary of pygame.mixer.Sound objects, each instantiated with a
+different pygame.mixer.Sound object, instantiated from different .wav 
+files.
+
+To draw the waveforms of each of the tracks, data from the wave file
+were read using scipy, and decibel values were calculated to pixel values.
+When tracks were merged, the values were recalculated and redrawn.
+
+Finally, to change the volumes at various points throughout the track, I
+designed a volumeChanger class, which is displayed on a Toplevel window.
+It allows the user to manipulate the volume levels at various points 
+throughout the track using a simple drag and drop procedure. The levels 
+were then converted from pixel values to multipliers, and applied 
+accordingly to each of the frames of all the wave files stored in the 
+Track object's dictionary of sounds.
+
+Although I initially intended to allow the user to apply sound effects,
+the required concepts, such as time stretching and pitch bending using the
+phase vocoder effect, were too advanced to pursue in the given time.

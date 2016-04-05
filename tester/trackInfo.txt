@@ -1,0 +1,5 @@
+80,2,4/4
+NAME:beat,COMMENT:hihi,WAVE FILES:tester/beat-wav1.wav,
+NAME:bass,COMMENT:hihi,WAVE FILES:tester/bass-wav8.wav,
+NAME:harmony,COMMENT:hihi,WAVE FILES:tester/h1-wav3.wav,tester/h2-wav4.wav,tester/h3-wav7.wav,
+NAME:adlib,COMMENT:hihi,WAVE FILES:tester/h4-wav2.wav,
