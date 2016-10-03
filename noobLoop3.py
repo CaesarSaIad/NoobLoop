@@ -110,13 +110,13 @@ def init(data):
 	# VARIABLES
 		data.emptyMenu = Menu(root)
 		data.mode = "splashScreen"
-		data.tickbox = PhotoImage(file="tickbox.gif")
+		data.tickbox = PhotoImage(file="img/tickbox.gif")
 		data.metronome = BooleanVar()
 		data.metronome.set(0)
-		data.bg1 = PhotoImage(file="splashscreen.gif")
-		data.bg2 = PhotoImage(file="loopermode.gif")
-		data.bg3 = PhotoImage(file="samplerbg.gif")
-		data.bg4 = PhotoImage(file="changetrackmode.gif")
+		data.bg1 = PhotoImage(file="img/splashscreen.gif")
+		data.bg2 = PhotoImage(file="img/loopermode.gif")
+		data.bg3 = PhotoImage(file="img/samplerbg.gif")
+		data.bg4 = PhotoImage(file="img/changetrackmode.gif")
 
 		data.CHUNK = 2048
 		data.FORMAT = 8
@@ -791,27 +791,27 @@ class Track(object):
 		self.height = 60
 		#(x,y) adjusted later using self.adjustPos()
 
-		buttonImage = PhotoImage(file="recordbutton.gif")
+		buttonImage = PhotoImage(file="img/recordbutton.gif")
 		self.recButton = Button(canvas, image=buttonImage,width=20,height=20,
 									bg="white",command=self.recButtonPressed)
 		self.recButton.image = buttonImage 
 
-		buttonImage = PhotoImage(file="changetrackbutton.gif")
+		buttonImage = PhotoImage(file="img/changetrackbutton.gif")
 		self.changeButton = Button(canvas, image=buttonImage,width=20,height=20,
 									bg="white",command=self.changeButtonPressed)
 		self.changeButton.image = buttonImage 
 
-		buttonImage = PhotoImage(file="play.gif")
+		buttonImage = PhotoImage(file="img/play.gif")
 		self.playButton = Button(canvas, image=buttonImage,width=20,height=20,
 									bg="white",command=self.playButtonPressed)
 		self.playButton.image = buttonImage
 
-		buttonImage = PhotoImage(file="volume.gif")
+		buttonImage = PhotoImage(file="img/volume.gif")
 		self.changeVolumeButton = Button(canvas,image=buttonImage,width=20,
 				height=20,bg="white",command=self.changeVolumeButtonPressed)
 		self.changeVolumeButton.image = buttonImage
 
-		buttonImage = PhotoImage(file="mute.gif")
+		buttonImage = PhotoImage(file="img/mute.gif")
 		self.muteButton = Button(canvas, image=buttonImage,width=20,height=20,
 								bg="white",command=self.muteTrack)
 		self.muteButton.image = buttonImage
